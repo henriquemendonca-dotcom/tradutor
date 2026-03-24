@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Tradutor Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <h1>Tradutor</h1>
+            <p>Traduza textos instantaneamente</p>
+        </div>
+
+        <!-- Área de tradução -->
+        <div class="area-traducao">
+            <!-- Texto original -->
+            <div class="painel">
+                <div class="painel-header">
+                    <select class="idioma-origem" id="idiomaOrigem">
+                        <option value="pt">Português</option>
+                        <option value="en">Inglês</option>
+                        <option value="es">Espanhol</option>
+                        <option value="fr">Francês</option>
+                        <option value="de">Alemão</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">Japonês</option>
+                        <option value="ko">Coreano</option>
+                        <option value="zh">Chinês</option>
+                        <option value="ru">Russo</option>
+                    </select>
+                    <button class="btn-limpar" id="btnLimpar">✕</button>
+                </div>
+                <textarea id="textoOrigem" placeholder="Digite o texto para traduzir..."></textarea>
+                <div class="painel-footer">
+                    <span id="contadorCaracteres">0 / 5000</span>
+                    <button class="btn-microfone" id="btnMicrofoneOrigem">🎤</button>
+                </div>
+            </div>
+
+            <!-- Botão de troca -->
+            <button class="btn-trocar" id="btnTrocar">⇄</button>
+
+            <!-- Texto traduzido -->
+            <div class="painel">
+                <div class="painel-header">
+                    <select class="idioma-destino" id="idiomaDestino">
+                        <option value="en">Inglês</option>
+                        <option value="pt">Português</option>
+                        <option value="es">Espanhol</option>
+                        <option value="fr">Francês</option>
+                        <option value="de">Alemão</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">Japonês</option>
+                        <option value="ko">Coreano</option>
+                        <option value="zh">Chinês</option>
+                        <option value="ru">Russo</option>
+                    </select>
+                    <button class="btn-copiar" id="btnCopiar">📋 Copiar</button>
+                </div>
+                <div id="textoDestino" class="texto-destino">Tradução aparecerá aqui...</div>
+                <div class="painel-footer">
+                    <button class="btn-ouvir" id="btnOuvir">🔊 Ouvir</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicador de carregamento -->
+        <div class="loading" id="loading">Traduzindo...</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
