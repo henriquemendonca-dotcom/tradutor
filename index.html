@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="caixaApp">
+
+        <textarea class="texto">Eu sou lindo</textarea>
+
+        <div class="caixa-interna">
+
+            <select class="idioma">
+                <option value="de">Alemão</option>
+                <option value="en">ingles</option>
+                <option value="ja">Japones</option>
+            </select>
+
+            <button onclick="traduzir()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-languages-icon lucide-languages">
+                    <path d="m5 8 6 6" />
+                    <path d="m4 14 6-6 2-3" />
+                    <path d="M2 5h12" />
+                    <path d="M7 2h1" />
+                    <path d="m22 22-5-10-5 10" />
+                    <path d="M14 18h6" />
+                </svg></button>
+            <button onclick="microfone()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-mic-icon lucide-mic">
+                    <path d="M12 19v3" />
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                    <rect x="9" y="2" width="6" height="13" rx="3" />
+                </svg></button>
+
+        </div>
+
+        <div class="tradução">
+            <h1 class="titulo-traducao">Tradução</h1>
+            <p class="traducao">Texto Traduzido</p>
+        </div>
+
+
+        <script src="app.js"></script>
+</body>
+
+</html>
